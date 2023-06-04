@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.ConnexionController">
+   <children>
+      <AnchorPane prefHeight="422.0" prefWidth="239.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/login2.png" />
+               </image></ImageView>
+            <Button fx:id="cnx_inscri" layoutX="56.0" layoutY="342.0" mnemonicParsing="false" onAction="#goToInscriptionScene" prefHeight="28.0" prefWidth="120.0" style="-fx-background-color: none; -fx-border-color: #0c2340; -fx-border-radius: 30;" text="Sign Up" textFill="#0c2340">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font></Button>
+            <Label layoutX="70.0" layoutY="313.0" text="Not registred yet ?" />
+         </children></AnchorPane>
+      <AnchorPane prefHeight="422.0" prefWidth="363.0" style="-fx-background-color: white;">
+         <children>
+            <TextField fx:id="cnx_email" layoutX="34.0" layoutY="161.0" prefHeight="28.0" prefWidth="302.0" style="-fx-background-radius: 30;" />
+            <Label layoutX="107.0" layoutY="59.0" text="Welcome Back !" textFill="#ff2d2d">
+               <font>
+                  <Font name="Segoe UI Semibold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="141.0" text="Email">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font></Label>
+            <Label layoutX="34.0" layoutY="203.0" text="Password" />
+            <Button fx:id="cnx_submit" layoutX="215.0" layoutY="306.0" mnemonicParsing="false" onAction="#LoginButtonOnAction" prefHeight="28.0" prefWidth="120.0" style="-fx-background-color: #ff2d2d; -fx-background-radius: 30; -fx-border-color: #ff2d2d; -fx-border-radius: 30;" text="Submit" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="cnx_error" layoutX="92.0" layoutY="94.0" prefHeight="17.0" prefWidth="180.0" textFill="#ff1212" />
+            <PasswordField fx:id="cnx_passwd" layoutX="34.0" layoutY="223.0" prefHeight="28.0" prefWidth="302.0" style="-fx-background-radius: 30;" />
+            <Label fx:id="cnx_error_passwd" layoutX="196.0" layoutY="203.0" textFill="#ff1515" />
+         </children></AnchorPane>
+   </children>
+</HBox>

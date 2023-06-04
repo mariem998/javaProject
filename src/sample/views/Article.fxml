@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="662.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.ArticleController">
+   <children>
+      <VBox layoutX="-11.0" prefHeight="662.0" prefWidth="189.0" style="-fx-background-color: #0c2340; -fx-background-radius: 15;">
+         <children>
+            <ImageView fitHeight="127.0" fitWidth="189.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/19-02.png" />
+               </image>
+            </ImageView>
+            <Label text="Hello," textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="20.0" top="-47.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Segoe UI Semibold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="logged_user" text="user_name" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Semibold Italic" size="19.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets right="5.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets left="17.0" top="-3.0" />
+               </VBox.margin>
+            </Label>
+            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: none;" text="Articles" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+               <graphic>
+                  <Button mnemonicParsing="false" onAction="#goToArticlesScene" style="-fx-background-color: none;">
+                     <effect>
+                        <ImageInput x="10.0" y="10.0">
+                           <source>
+                              <Image url="@../images/icons/article-16.png" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                     <padding>
+                        <Insets left="13.0" right="21.0" top="19.0" />
+                     </padding>
+                  </Button>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="-33.0" top="51.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="add_articles" layoutX="5.0" layoutY="87.0" mnemonicParsing="false" onAction="#goToArticlesScene" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: none;" text="Ajouter Articles" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+               <graphic>
+                  <Button mnemonicParsing="false" style="-fx-background-color: none;">
+                     <effect>
+                        <ImageInput x="10.0" y="10.0">
+                           <source>
+                              <Image url="@../images/icons/add-list-16.png" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                     <padding>
+                        <Insets left="13.0" right="21.0" top="19.0" />
+                     </padding>
+                  </Button>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="-5.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="5.0" layoutY="87.0" mnemonicParsing="false" onAction="#goToAddCategoriesScene" prefHeight="48.0" prefWidth="200.0" style="-fx-background-color: none;" text="Ajouter Catégorie" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+               <graphic>
+                  <Button mnemonicParsing="false" style="-fx-background-color: none;">
+                     <effect>
+                        <ImageInput x="10.0" y="10.0">
+                           <source>
+                              <Image url="@../images/icons/article-16.png" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                     <padding>
+                        <Insets left="13.0" right="21.0" top="19.0" />
+                     </padding>
+                  </Button>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="-5.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="5.0" layoutY="286.0" mnemonicParsing="false" onAction="#goToAddAbonnementScene" prefHeight="48.0" prefWidth="220.0" style="-fx-background-color: none;" text="Abonnement" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+               <graphic>
+                  <Button mnemonicParsing="false" style="-fx-background-color: none;">
+                     <effect>
+                        <ImageInput x="10.0" y="10.0">
+                           <source>
+                              <Image url="@../images/icons/article-16.png" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                     <padding>
+                        <Insets left="13.0" right="21.0" top="19.0" />
+                     </padding>
+                  </Button>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="-20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <ImageView fx:id="ArticleImage" fitHeight="213.0" fitWidth="540.0" layoutX="56.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="223.0" AnchorPane.rightAnchor="87.0" AnchorPane.topAnchor="79.0" />
+      <Label fx:id="ArticleTitle" layoutX="207.0" layoutY="17.0" text="Label" AnchorPane.leftAnchor="207.0" AnchorPane.topAnchor="17.0">
+         <font>
+            <Font name="Segoe UI Semibold" size="22.0" />
+         </font></Label>
+      <Label fx:id="ArticleDateTime" layoutX="203.0" layoutY="55.0" text="Label" AnchorPane.topAnchor="55.0">
+         <font>
+            <Font name="Segoe UI Light Italic" size="14.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="68.0" layoutY="545.0" prefHeight="34.0" prefWidth="507.0" style="-fx-background-color: #FAC505;" text="Commentaires" textAlignment="CENTER" textFill="#0c2340" underline="true" AnchorPane.leftAnchor="272.0" AnchorPane.topAnchor="402.0">
+         <font>
+            <Font name="Segoe UI Semibold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="ArticleText" accessibleRole="TEXT_AREA" layoutX="32.0" layoutY="359.0" prefHeight="86.0" prefWidth="618.0" text="Label" AnchorPane.leftAnchor="233.0" AnchorPane.topAnchor="286.0">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="commentaire" layoutX="17.0" layoutY="557.0" prefHeight="41.0" prefWidth="654.0" promptText="AddText" style="-fx-background-radius: 30;" styleClass="b" AnchorPane.leftAnchor="203.0" AnchorPane.topAnchor="451.0" />
+      <Button fx:id="BtnAddComments" layoutX="568.0" layoutY="565.0" mnemonicParsing="false" onAction="#AjouterCommentaire" prefHeight="32.0" prefWidth="82.0" style="-fx-background-color: #0c2340; -fx-background-radius: 30;" text="Ajouter" textFill="WHITE" AnchorPane.leftAnchor="770.0" AnchorPane.topAnchor="455.0">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="comments" layoutX="19.0" layoutY="514.0" prefHeight="134.0" prefWidth="654.0" AnchorPane.leftAnchor="204.0">
+        <columns>
+          <TableColumn fx:id="username" prefWidth="100.0" text="username" />
+          <TableColumn fx:id="comment" prefWidth="300.0" text="commentaire" />
+            <TableColumn fx:id="dateCom" prefWidth="90.0" text="date" />
+        </columns>
+      </TableView>
+      <Button fx:id="BtnModifArt" layoutX="582.0" layoutY="33.0" mnemonicParsing="false" onAction="#goToModifArticle" prefHeight="32.0" prefWidth="82.0" style="-fx-background-color: #FAC505; -fx-background-radius: 30;" text="Modifier" textFill="WHITE" AnchorPane.leftAnchor="787.0">
+         <font>
+            <Font name="Segoe UI Semibold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
